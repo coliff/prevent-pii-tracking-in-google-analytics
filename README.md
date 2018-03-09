@@ -12,7 +12,7 @@ This work-around script works by only including Google Analytics tracking snippe
   ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
 </script>
 <script>
-  if(location.href.match(/(?:\b|_)(?:username=|email=|password=)(?:\b|_)/i) > -1){
+  if(location.href.match(/(?:\b|_)(?:username|email|password)(?:\b|_)/i) > -1){
   document.write('<script src="https://www.google-analytics.com/analytics.js" aysnc defer><\/script>');
   }
 </script>
@@ -31,3 +31,9 @@ If you include params with PPI in the URL though, Google Analytics will not load
 
 
 Note; the optimized Google Analytics snippet is from [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html)
+
+<script>
+  if(location.href.match(/(?:\b|_)(?:'username'|'email'|'password')(?:\b|_)/i) > -1){
+  document.write('<script src="https://www.googleadservices.com/pagead/conversion.js"><\/script>');
+  }
+</script>
