@@ -23,11 +23,11 @@ https://coliff.github.io/prevent-ppi-tracking-in-google-analytics/ - this loads 
 
 If you include params with PPI in the URL though, Google Analytics will not load:
 
-- https://coliff.github.io/prevent-ppi-tracking-in-google-analytics/?username=redacted%40example.com&password=Z0_0CS_9
+- https://coliff.github.io/prevent-ppi-tracking-in-google-analytics/?username=redacted%40example.com&password=Z00CS9
 
-- https://coliff.github.io/prevent-ppi-tracking-in-google-analytics/signup?userName=redacted%40example.com&token=992344
+- https://coliff.github.io/prevent-ppi-tracking-in-google-analytics/?userName=redacted%40example.com&token=9234
 
-- https://coliff.github.io/prevent-ppi-tracking-in-google-analytics/?email=redacted%40example.com&token=%3D%3DAyGn7uChYDqsbo%2BrskKhod9TnYhS2DPGUkr4dnBQnw%2BujETTDflKunRINskKnlTk3u5WSipVjaxcH39%2BlN9tQX
+- https://coliff.github.io/prevent-ppi-tracking-in-google-analytics/?email=redacted%40example.com&token=%3%tQX
 
 
 Note; the optimized Google Analytics snippet is from [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html)
