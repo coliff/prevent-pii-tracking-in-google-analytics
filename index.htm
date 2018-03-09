@@ -1,5 +1,5 @@
 <script>
-  if(document.location.href.indexOf(userName || username || email) === -1){
+  if(location.href.match(/(?:\b|_)(?:username|userName|email|password)(?:\b|_)/i)){
   document.write('<script src="https://www.googleadservices.com/pagead/conversion.js"><\/script>TRACKING');
   }
 </script>
