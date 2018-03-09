@@ -6,7 +6,7 @@ Google provide some helpful [Best Practises information](https://support.google.
 
 This work-around script works by only including Google Analytics tracking snippet if the URL **does not** include `email=`, `username=` or `password=` strings. The exact strings could easily be modified to suit your needs.
 
-``` htm
+``` html
 <script>
   window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
   ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
@@ -19,15 +19,15 @@ This work-around script works by only including Google Analytics tracking snippe
 ```
 
 See demo at:
-https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm - this loads Google Analytics as normal
+[https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm](https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm) - this loads Google Analytics as normal
 
 If you include params with PPI in the URL though, Google Analytics will not load:
 
-- https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm?username=redacted%40example.com&password=Z0CS9
+- [https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm?username=redacted%40example.com&password=Z0CS9](demo.htm?username=redacted%40example.com&password=Z0CS9)
 
-- https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm?userName=redacted%40example.com&token=9234
+- [https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm?userName=redacted%40example.com&token=9234](demo.htm?userName=redacted%40example.com&token=9234)
 
-- https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm?email=redacted%40example.com&token=%3%tX
+- [https://coliff.github.io/prevent-pii-tracking-in-google-analytics/demo.htm?email=redacted%40example.com&token=%3%tX](demo.htm?email=redacted%40example.com&token=%3%tX)
 
 
 Note; the optimized Google Analytics snippet is from [HTML5Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html)
