@@ -1,6 +1,6 @@
 # Prevent PII from being tracking in Google Analytics
 
-Google don't allow PII (Personally Identifiable Information) to be tracked in Google Analytics. You can have your Google Analytics account suspeneded if you don't abide by the rules.
+Google don't allow PII (Personally Identifiable Information) to be tracked in Google Analytics. You can have your Google Analytics account suspended if you don't abide by the rules.
 
 Google provide some helpful [Best Practises information](https://support.google.com/adsense/answer/6156630?hl=en), but their suggestions often rely on rewriting your web application so that PPI aren't displayed in the URL.
 
